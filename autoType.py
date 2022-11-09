@@ -1,5 +1,10 @@
 import pyautogui
 import time
+import pyfiglet
+
+# Intro
+program_name = pyfiglet.figlet_format("autoType")
+print(program_name + 'v0.1')
 
 # Input
 text = input("Text: ")
