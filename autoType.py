@@ -10,6 +10,7 @@ print(program_name + 'v0.1')
 text = input("Text: ")
 value = int(input("Loop: "))
 sec = int(input("Delay (sec) - "))
+press_enter = True
 
 # Delay
 for i in reversed(range(sec)):
@@ -20,5 +21,6 @@ for i in reversed(range(sec)):
 count = 1
 while count <= value:
     pyautogui.typewrite(text)
-    pyautogui.press("enter")
+    if press_enter:
+        pyautogui.press("enter")
     count += 1
