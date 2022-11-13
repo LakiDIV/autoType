@@ -8,8 +8,21 @@ print(program_name + 'v0.1')
 
 # Input
 text = input("Text: ")
-value = int(input("Loop: "))
-sec = int(input("Delay (sec) - "))
+
+while True:
+    try:
+        value = int(input("Loop: "))
+        break
+    except ValueError:
+        print("Use a valid input!")
+
+while True:
+    try:
+        sec = int(input("Delay (sec) - "))
+        break
+    except ValueError:
+        print("Use a valid input!")
+
 press_enter = True
 
 # Delay
