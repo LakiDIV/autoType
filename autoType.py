@@ -4,7 +4,7 @@ import pyfiglet
 
 # Intro
 program_name = pyfiglet.figlet_format("autoType")
-print(program_name + 'v0.1')
+print(program_name)
 
 # Input
 text = input("Text: ")
